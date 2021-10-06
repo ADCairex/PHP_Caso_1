@@ -1,8 +1,8 @@
 <?php
 
     class Personaje {
+
         public $id;
-        public $nombre;
         public $dni;
         public $edad;
         public $altura;
@@ -11,29 +11,72 @@
         public $icono;
         public $descripcion;
 
+        function __construct($id, $nombre, $dni, $edad, $altura, $peso, $imagen, $icono, $descripcion) {
+            $this->id = $id;
+            $this->nombre = $nombre;
+            $this->dni = $dni;
+            $this->edad = $edad;
+            $this->altura = $altura;
+            $this->peso = $peso;
+            $this->imagen = $imagen;
+            $this->icono = $icono;
+            $this->descripcion = $descripcion;
+        }
+
         function calcularEdad() {
             
         }
     }
 
     class Orco extends Personaje {
+
         public $colmillos;
         public $raza;
+
+        function __construct($id, $nombre, $dni, $edad, $altura, $peso, $imagen, $icono, $descripcion, $colmillos, $raza) {
+            parent::__construct($id, $nombre, $dni, $edad, $altura, $peso, $imagen, $icono, $descripcion);
+
+            $this->colmillos = $colmillos;
+            $this->raza = $raza;
+        }
     }
     
     class Elfo extends Personaje {
+
         public $orejas;
         public $clan;
+
+        function __construct($id, $nombre, $dni, $edad, $altura, $peso, $imagen, $icono, $descripcion, $orejas, $clan) {
+            parent::__construct($id, $nombre, $dni, $edad, $altura, $peso, $imagen, $icono, $descripcion);
+
+            $this->orejas = $orejas;
+            $this->clan = $clan;
+        }
     }
 
     class Hombre extends Personaje {
+
         public $raza;
         public $familia;
+
+        function __construct($id, $nombre, $dni, $edad, $altura, $peso, $imagen, $icono, $descripcion, $raza, $familia) {
+            parent::__construct($id, $nombre, $dni, $edad, $altura, $peso, $imagen, $icono, $descripcion);
+
+            $this->raza = $raza;
+            $this->familia = $familia;
+        }
     }
 
     class Enano extends Personaje {
+
         public $barba;
         public $herrero;
-    }
 
+        function __construct($id, $nombre, $dni, $edad, $altura, $peso, $imagen, $icono, $descripcion, $barba, $herrero) {
+            parent::__construct($id, $nombre, $dni, $edad, $altura, $peso, $imagen, $icono, $descripcion);
+
+            $this->barba = $barba;
+            $this->herrero = $herrero;
+        }
+    }
 ?>
