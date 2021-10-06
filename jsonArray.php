@@ -8,7 +8,7 @@ $arr = array (
     array(
         "id" => 1,
         "name" => "Pankaj Singh",
-        "birthDate" => "01/01/1992"
+        "birthDate" => "01/01/1992",
         "height" => 20,
         "weight" => 20,
 
