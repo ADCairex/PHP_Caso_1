@@ -3,8 +3,17 @@
     <head>
         <meta charset="UTF-8">
         <title>Preguntas Frecuentes</title>
+        <?php
+        include 'styles.php';
+        ?>
     </head>
     <body>
+
+    <?php
+include 'header.php';
+?>
+<div class="contenidoPreguntas">
+
         <p>
             Lorem ipsum dolor sit amet, consectetur adipiscing elit. Integer gravida massa eu magna varius, ac dignissim metus luctus. Pellentesque vel imperdiet turpis. Mauris venenatis quam sit amet ullamcorper mollis. Nulla facilisi. Donec libero augue, egestas nec eros id, pretium euismod sem. Morbi consequat massa orci, sed facilisis sapien suscipit vitae. Sed finibus nec metus fringilla luctus.
         </p>
@@ -21,5 +30,11 @@
             Nam at venenatis nisi. Pellentesque ligula tellus, faucibus quis diam sed, luctus laoreet elit. Praesent in luctus tortor, eget tempus neque. Nam dignissim pellentesque felis vel condimentum. Integer ullamcorper enim fringilla sem fringilla, a sagittis felis pretium. Ut sodales orci neque, vitae porta quam laoreet non. Sed elementum tincidunt nisl, at euismod eros congue at. Nulla massa arcu, facilisis sed bibendum a, posuere et tortor. Praesent vestibulum diam gravida risus congue, at elementum orci imperdiet. 
         </p>
         <a href="index.php"><button>Volver</button></a>
+
+</div>
+        <?php
+include 'footer.php';
+?>
+
     </body>
 </html>

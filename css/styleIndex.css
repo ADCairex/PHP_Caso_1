@@ -2,8 +2,23 @@ body, html {
     width: 100%;
     height: 100%;
     margin: 0;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+
 }
 
+header{
+    width: 100%;
+    margin-bottom: 50px;
+    position: fixed;
+}
+
+form{
+    display: flex;
+    flex-direction: column;
+    margin: auto;
+}
 .header {
     display: flex;
     flex-direction: column;
@@ -52,6 +67,7 @@ p{
     display: flex;
     flex-direction: row;
     padding: .5rem 2rem;
+    opacity: .9;
 }
 
 .container_footer{
@@ -136,6 +152,7 @@ p{
 .sectionPersonajes{
     display: flex;
     flex-wrap: wrap;
+    padding-top: 4rem;
 }
 .containerPersonajes{
     display: flex;
@@ -200,6 +217,10 @@ padding: .2rem 0;
     background-size: cover;
     background-repeat: round;
     padding: 5rem;
+}
+
+.contenidoPreguntas{
+    padding-top: 6rem;;
 }
 /* RESPONSIVE SECTION*/
 

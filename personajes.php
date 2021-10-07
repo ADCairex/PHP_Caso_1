@@ -70,7 +70,10 @@
                     <a href="#"><img src="imagenes/tittleImage.png" width="auto" height="100%"></a>
                 </div>
                 <div class="data">
+                    <div class="dataName">
                     <h2>Nombre , 37 años</h2>
+                    <i class="fas fa-basketball-ball"></i>
+                    </div>
                     <div class="dataTable">
 
                         <!-- Aquí hay que hacer un bucle para crear las características -->
@@ -129,7 +132,10 @@
                     <a href="#"><img src="imagenes/tittleImage.png" width="auto" height="100%"></a>
                 </div>
                 <div class="data">
+                    <div class="dataName">
                     <h2>Nombre , 37 años</h2>
+                    <i class="fas fa-basketball-ball"></i>
+                    </div>
                     <div class="dataTable">
 
                         <!-- Aquí hay que hacer un bucle para crear las características -->
@@ -188,7 +194,10 @@
                     <a href="#"><img src="imagenes/tittleImage.png" width="auto" height="100%"></a>
                 </div>
                 <div class="data">
+                    <div class="dataName">
                     <h2>Nombre , 37 años</h2>
+                    <i class="fas fa-basketball-ball"></i>
+                    </div>
                     <div class="dataTable">
 
                         <!-- Aquí hay que hacer un bucle para crear las características -->
