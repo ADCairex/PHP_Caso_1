@@ -4,8 +4,8 @@
         <div class="menu">
             <ul>
                 <li><a href="index.php">Inicio</a></li>
-                <li><a href="preguntasFrecuentes.php">Preguentas Frecuentes</a></li>
-                <li><a href="login.php">Cerrar sesion</a></li>
+                <li><a href="templates/preguntasFrecuentes.php">Preguentas Frecuentes</a></li>
+                <li><a href="templates/login.php">Cerrar sesion</a></li>
             </ul>
         </div>
     </div>
