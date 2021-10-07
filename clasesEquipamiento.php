@@ -55,8 +55,8 @@
         public $materialHoja;
         public $materialMango;
 
-        function __construct($id, $nombre, $antiguedad, $dimension_largo, $dimension_ancho, $peso, $imagen, $icono, $descripcion, $materialHoja, $materialMango ){
-            parent::__construct($id, $nombre, $antiguedad, $dimension_largo, $dimension_ancho, $peso, $imagen, $icono, $descripcion);
+        function __construct($id, $nombre, $antiguedad, $dimensionLargo, $dimensionAncho, $peso, $imagen, $icono, $descripcion, $materialHoja, $materialMango ){
+            parent::__construct($id, $nombre, $antiguedad, $dimensionLargo, $dimensionAncho, $peso, $imagen, $icono, $descripcion);
     
             $this->materialHoja = $materialHoja;
             $this->materialMango = $materialMango;
@@ -69,8 +69,8 @@
         public $materialCuerpo;
         public $materialCuerda;
 
-        function __construct($id, $nombre, $antiguedad, $dimension_largo, $dimension_ancho, $peso, $imagen, $icono, $descripcion, $materialCuerpo, $materialCuerda ){
-            parent::__construct($id, $nombre, $antiguedad, $dimension_largo, $dimension_ancho, $peso, $imagen, $icono, $descripcion);
+        function __construct($id, $nombre, $antiguedad, $dimensionLargo, $dimensionAncho, $peso, $imagen, $icono, $descripcion, $materialCuerpo, $materialCuerda ){
+            parent::__construct($id, $nombre, $antiguedad, $dimensionLargo, $dimensionAncho, $peso, $imagen, $icono, $descripcion);
     
             $this->materialCuerpo = $materialCuerpo;
             $this->materialCuerda = $materialCuerda;
@@ -81,8 +81,8 @@
         public $material;
         public $resistencia;
 
-        function __construct($id, $nombre, $antiguedad, $dimension_largo, $dimension_ancho, $peso, $imagen, $icono, $descripcion, $material, $resistencia ){
-            parent::__construct($id, $nombre, $antiguedad, $dimension_largo, $dimension_ancho, $peso, $imagen, $icono, $descripcion);
+        function __construct($id, $nombre, $antiguedad, $dimensionLargo, $dimensionAncho, $peso, $imagen, $icono, $descripcion, $material, $resistencia ){
+            parent::__construct($id, $nombre, $antiguedad, $dimensionLargo, $dimensionAncho, $peso, $imagen, $icono, $descripcion);
     
             $this->material = $material;
             $this->resistencia = $resistencia;
@@ -94,8 +94,8 @@
         public $materialHojaH;
         public $materialMangoH;
     
-        function __construct($id, $nombre, $antiguedad, $dimension_largo, $dimension_ancho, $peso, $imagen, $icono, $descripcion, $materialHojaH, $materialMangoH ){
-            parent::__construct($id, $nombre, $antiguedad, $dimension_largo, $dimension_ancho, $peso, $imagen, $icono, $descripcion);
+        function __construct($id, $nombre, $antiguedad, $dimensionLargo, $dimensionAncho, $peso, $imagen, $icono, $descripcion, $materialHojaH, $materialMangoH ){
+            parent::__construct($id, $nombre, $antiguedad, $dimensionLargo, $dimensionAncho, $peso, $imagen, $icono, $descripcion);
     
             $this->materialHojaH = $materialHojaH;
             $this->materialMangoH = $materialMangoH;
