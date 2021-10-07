@@ -23,5 +23,21 @@
                 </ul>
             </div>
         </div>
+        <div class="content">
+            <?php
+                include 'cargarPersonajes.php';
+                echo '<table>';
+                    foreach ($personajesJson as $i) {
+                        echo '<tr>';
+                            foreach ($i as $j) {
+                                echo '<td>';
+                                    echo $j . ' ';
+                                echo '</td>';
+                            }
+                        echo '</tr>';
+                    }
+                echo '</table>';
+            ?>
+        </div>
     </body>
 </html>
