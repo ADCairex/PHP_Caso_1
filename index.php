@@ -3,25 +3,34 @@
     <head>
         <meta charset="UTF-8">
         <title>Inicio PHP Caso 1</title>
-        <link rel="stylesheet" href="css/styleIndex.css">
+        <?php
+        include 'styles.php';
+        ?>
     </head>
     <body>
-        <div class="header">
-            <div class="iconTittle">
-                <div>
-                    <img src="imagenes/tittleImage.png" width="50px" height="50px">
-                </div>
-                <div>
-                    <h1 class="headerTittle">Pagina de inicio de PHP Caso 1</h1>
-                </div>
-            </div>
-            <div class="navDiv">
-                <ul class="nav">
-                    <li><a href="index.php">Inicio</a></li>
-                    <li><a href="preguntasFrecuentes.php">Preguentas Frecuentes</a></li>
-                    <li><a href="login.php">Cerrar sesion</a></li>
-                </ul>
-            </div>
-        </div>
+
+<?php
+include 'header.php';
+?>
+
+
+<?php
+include 'personajes.php';
+?>
+
+
+<?php
+include 'equipamiento.php';
+?>
+
+
+<?php
+include 'footer.php';
+?>
+
+<?php
+include 'scripts.php';
+?>
+
     </body>
 </html>
