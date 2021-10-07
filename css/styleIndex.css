@@ -2,8 +2,25 @@ body, html {
     width: 100%;
     height: 100%;
     margin: 0;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    
+
 }
 
+
+header{
+    width: 100%;
+    margin-bottom: 50px;
+    position: fixed;
+}
+
+form{
+    display: flex;
+    flex-direction: column;
+    margin: auto;
+}
 .header {
     display: flex;
     flex-direction: column;
@@ -37,3 +54,249 @@ a {
     text-decoration: none;
     color: black;
 }
+
+/* SERGIO */
+
+p{
+    margin: 0;;
+}
+
+/* HEADER & FOOTER */
+
+.container_header, .container_footer{
+    height: auto;
+    background-color: grey;
+    display: flex;
+    flex-direction: row;
+    padding: .5rem 2rem;
+    opacity: .9 !important;
+}
+
+.container_footer{
+    flex-direction: row-reverse;
+}
+.container_footer .menu{
+    flex-direction: row-reverse;
+}
+
+.container_footer .menu ul{
+    flex-direction: row-reverse;
+}
+.logo{
+    width: 10%;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+}
+.logo img:hover{
+    -moz-transform: rotate(-360eg);
+    -o-transform: rotate(-360deg);
+    -webkit-transform: rotate(-360deg);
+    transform: rotate(-360deg);
+    transition-duration: 2s;
+}
+.menu{
+    width: 90%;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    font-family: fantasy;
+}
+.menu ul{
+    display: flex;
+    flex-direction: row;
+    justify-content: right;
+    list-style:none;
+    margin: 0;
+}
+.menu li{
+    padding: 0 1rem;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+}
+.menu a{
+    color: honeydew;
+    font-size: 1.2rem;
+}
+.menu a:hover{
+    color: #f5bd67;
+}
+
+/* RESPONSIVE HEADER*/
+
+@media(max-width: 769px){
+    .menu a{
+        font-size: .9rem;
+    }
+}
+
+@media(max-width: 515px){
+    .container_header{
+        flex-direction: column;
+    }
+    .menu{
+        width: 100%;
+    }
+    .menu ul{
+        justify-content: center;
+        padding: .5rem 0;
+    }
+    .logo{
+        width: 100%;
+        justify-content: center;
+        flex-direction: row;
+    }
+}
+
+/* LOGIN FORM */
+
+.loginForm{
+    height: 90%;
+    display: flex;
+    background-image: url(../imagenes/cover.jpg);
+    background-size: cover;
+    background-repeat: no-repeat;
+    background-position: center;
+}
+.loginForm form{
+    padding: 2rem;
+    background-color: #80808096;
+    border-radius: 1rem;
+}
+.loginForm input{
+    margin: 1rem 0;
+}
+.loginForm button{
+    margin: 1rem 0;
+}
+
+/* SECTION */
+
+.tituloTable{
+    text-align: center;
+    margin-top: 2rem;
+    padding-top: 5rem;
+}
+
+.sectionPersonajes{
+    display: flex;
+    flex-wrap: wrap;
+    padding-top: 2rem;
+    background-image: url(../imagenes/cover.jpg);
+    background-size: cover;
+    background-repeat: no-repeat;
+    background-position: center;
+}
+.containerPersonajes{
+    display: flex;
+    flex-direction: column;
+    width: 33.33%;
+}
+.containerPersonajesBox{
+    background-color: rgb(247, 243, 243);
+    width: 90%;
+    height: auto;
+    margin: 2rem auto;
+    -webkit-box-shadow: 0px 5px 14px -4px rgba(0,0,0,1);
+-moz-box-shadow: 0px 5px 14px -4px rgba(0,0,0,1);
+box-shadow: 0px 5px 14px -4px rgba(0,0,0,1);
+}
+.containerPersonajesBox:hover{
+    width: 92%;
+    transition-duration: .2s;
+
+}
+.row{
+    display: flex;
+    flex-direction: row;
+    padding: 1rem;
+}
+.rowPersonajes {
+width: 100%;
+display: flex;
+padding: .2rem 0;
+}
+
+.image, .data{
+    width: 100%;    
+}
+.image, .dataName i{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    text-align: center;
+}
+
+.image img{
+    width: 100% !important;
+    max-width: 100px;
+    height: auto;
+}
+
+.dataName{
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+}
+.dataName i{
+    padding-right: 1rem;
+}
+
+.caracteristica, .valor{
+    width: 50%;
+}
+.valor{
+    text-align: center;
+}
+
+.descripcion{
+    background-image: url("../imagenes/pergamino.png");
+    background-size: cover;
+    background-repeat: round;
+    padding: 5rem;
+}
+
+.contenidoPreguntas{
+    padding-top: 6rem;
+    background-image: url(../imagenes/cover.jpg);
+    background-size: cover;
+    background-repeat: no-repeat;
+    background-position: center;
+    display: flex;
+    flex-direction: column;
+    height: inherit;
+    padding: 10%;
+}
+
+.contenidoPreguntas p{
+    padding: 1rem 0;
+}
+/* RESPONSIVE SECTION*/
+
+
+@media(max-width: 1280px){
+    .containerPersonajes {
+        display: flex;
+        flex-direction: column;
+        width: 50%;
+    }
+    
+}
+
+@media(max-width: 769px){
+    .container_footer{
+        flex-direction: row-reverse;
+
+    }
+    .container{
+        flex-direction: column;
+    }
+    .menu div{
+        width: 100%;
+    }
+    .containerPersonajes{
+        width: 100%;
+    }
+}
+
