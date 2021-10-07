@@ -1,15 +1,14 @@
 <?php
-
-function validar_dni($dni){
-	$letra = substr($dni, -1);
-	$numeros = substr($dni, 0, -1);
-	if ( substr("TRWAGMYFPDXBNJZSQVHLCKE", $numeros%23, 1) == $letra && strlen($letra) == 1 && strlen ($numeros) == 8 ){ // dni argentina  8 caracteres
-		echo 'valido';
-	}else{
-		echo 'no valido';
-	}
-}
- 
+    function validar_dni($dni){
+        $letra = substr($dni, -1);
+        $numeros = substr($dni, 0, -1);
+        if ( substr("TRWAGMYFPDXBNJZSQVHLCKE", $numeros%23, 1) == $letra && strlen($letra) == 1 && strlen ($numeros) == 8 ){ // dni argentina  8 caracteres
+            echo 'valido';
+        }else{
+            echo 'no valido';
+        }
+    }
+    
     class Equipamiento {
 
         public $id;
@@ -22,7 +21,7 @@ function validar_dni($dni){
         public $icono;
         public $descripcion;
 
-        function __construct($id, $nombre, $antiguedad, $dimension_largo, $dimension_ancho, $peso, $imagen, $icono, $descripcion){
+        function __construct($id, $nombre, $antiguedad, $dimensionLargo, $dimensionAncho, $peso, $imagen, $icono, $descripcion){
 
             $this->id = $id;
             $this->nombre = $nombre;
@@ -48,7 +47,7 @@ function validar_dni($dni){
         function getName() {
             return $this->nombre;
         }
-       
+    
     }
 
     class Espada extends Equipamiento {
@@ -94,7 +93,7 @@ function validar_dni($dni){
 
         public $materialHojaH;
         public $materialMangoH;
-       
+    
         function __construct($id, $nombre, $antiguedad, $dimension_largo, $dimension_ancho, $peso, $imagen, $icono, $descripcion, $materialHojaH, $materialMangoH ){
             parent::__construct($id, $nombre, $antiguedad, $dimension_largo, $dimension_ancho, $peso, $imagen, $icono, $descripcion);
     
@@ -102,5 +101,4 @@ function validar_dni($dni){
             $this->materialMangoH = $materialMangoH;
         }
     }
-
 ?>
