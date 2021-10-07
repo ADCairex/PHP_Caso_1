@@ -4,8 +4,8 @@
         <div class="menu">
             <ul>
                 <li><a href="index.php">Inicio</a></li>
-                <li><a href="preguntasFrecuentes.php">Preguentas Frecuentes</a></li>
-                <li><a href="login.php">Cerrar sesion</a></li>
+                <li><a href="politicaPrivacidad.php">Política Privacidad</a></li>
+                <li><a href="https://es-la.facebook.com/Warcraft/"><img src="imagenes/facebook.png" width="50px" height="50px"></a></li>
             </ul>
         </div>
     </div>
