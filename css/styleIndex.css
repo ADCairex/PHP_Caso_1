@@ -159,7 +159,11 @@ p{
     background-repeat: no-repeat;
     background-position: center;
 }
-
+.loginForm form{
+    padding: 2rem;
+    background-color: #80808096;
+    border-radius: 1rem;
+}
 .loginForm input{
     margin: 1rem 0;
 }
