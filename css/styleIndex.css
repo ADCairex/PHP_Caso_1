@@ -67,7 +67,7 @@ p{
     display: flex;
     flex-direction: row;
     padding: .5rem 2rem;
-    opacity: .9;
+    opacity: .9 !important;
 }
 
 .container_footer{
@@ -152,6 +152,10 @@ p{
 .loginForm{
     height: 90%;
     display: flex;
+    background-image: url(../imagenes/cover.jpg);
+    background-size: cover;
+    background-repeat: no-repeat;
+    background-position: center;
 }
 
 .loginForm input{
@@ -172,7 +176,7 @@ p{
 .sectionPersonajes{
     display: flex;
     flex-wrap: wrap;
-    padding-top: 4rem;
+    padding-top: 2rem;
 }
 .containerPersonajes{
     display: flex;
@@ -231,6 +235,9 @@ padding: .2rem 0;
 .caracteristica, .valor{
     width: 50%;
 }
+.valor{
+    text-align: center;
+}
 
 .descripcion{
     background-image: url("../imagenes/pergamino.png");
@@ -240,9 +247,20 @@ padding: .2rem 0;
 }
 
 .contenidoPreguntas{
-    padding-top: 6rem;;
+    padding-top: 6rem;
+    background-image: url(../imagenes/cover.jpg);
+    background-size: cover;
+    background-repeat: no-repeat;
+    background-position: center;
+    display: flex;
+    flex-direction: column;
+    height: inherit;
+    padding: 10%;
 }
 
+.contenidoPreguntas p{
+    padding: 1rem 0;
+}
 /* RESPONSIVE SECTION*/
 
 

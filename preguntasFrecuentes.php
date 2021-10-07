@@ -13,6 +13,7 @@
 include 'header.php';
 ?>
 <div class="contenidoPreguntas">
+    
 
         <p>
             Lorem ipsum dolor sit amet, consectetur adipiscing elit. Integer gravida massa eu magna varius, ac dignissim metus luctus. Pellentesque vel imperdiet turpis. Mauris venenatis quam sit amet ullamcorper mollis. Nulla facilisi. Donec libero augue, egestas nec eros id, pretium euismod sem. Morbi consequat massa orci, sed facilisis sapien suscipit vitae. Sed finibus nec metus fringilla luctus.
