@@ -1,3 +1,4 @@
+<h2 class="tituloTable">EQUIPAMIENTO</h2>
 <div class="sectionPersonajes">
     <!-- Aquí hay que hacer un bucle para crear los personajes -->
 

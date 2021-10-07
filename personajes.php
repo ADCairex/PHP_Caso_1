@@ -1,3 +1,4 @@
+<h2 class="tituloTable">PERSONAJES</h2>
 <div class="sectionPersonajes">
     <!-- Aquí hay que hacer un bucle para crear los personajes -->
 
@@ -72,7 +73,7 @@
                 <div class="data">
                     <div class="dataName">
                     <h2>Nombre , 37 años</h2>
-                    <i class="fas fa-basketball-ball"></i>
+                    <i class="fab fa-algolia"></i>
                     </div>
                     <div class="dataTable">
 

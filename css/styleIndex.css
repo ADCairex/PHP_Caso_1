@@ -147,7 +147,27 @@ p{
     }
 }
 
+/* LOGIN FORM */
+
+.loginForm{
+    height: 90%;
+    display: flex;
+}
+
+.loginForm input{
+    margin: 1rem 0;
+}
+.loginForm button{
+    margin: 1rem 0;
+}
+
 /* SECTION */
+
+.tituloTable{
+    text-align: center;
+    margin-top: 2rem;
+    padding-top: 5rem;
+}
 
 .sectionPersonajes{
     display: flex;
@@ -157,7 +177,7 @@ p{
 .containerPersonajes{
     display: flex;
     flex-direction: column;
-    width: 50%;
+    width: 33.33%;
 }
 .containerPersonajesBox{
     width: 90%;
@@ -222,7 +242,18 @@ padding: .2rem 0;
 .contenidoPreguntas{
     padding-top: 6rem;;
 }
+
 /* RESPONSIVE SECTION*/
+
+
+@media(max-width: 1280px){
+    .containerPersonajes {
+        display: flex;
+        flex-direction: column;
+        width: 50%;
+    }
+    
+}
 
 @media(max-width: 769px){
     .container_footer{

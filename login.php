@@ -22,6 +22,7 @@ function validar_dni($dni){
 	}
 }
 ?>
+<div class="loginForm">
         <form action="login.php" method="post">
             <label for="user">Username</label>
             <input type="text" name="user" id="user">
@@ -40,6 +41,7 @@ function validar_dni($dni){
                 }
             ?>
         </form>
+            </div>
         <?php
 include 'footer.php';
 ?>
