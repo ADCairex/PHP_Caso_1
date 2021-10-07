@@ -24,7 +24,18 @@
         }
 
         function calcularEdad() {
-            
+            $actualDate = getdate();
+            $this->edad = explode('/', $this->edad);
+            $year = $this->edad[2];
+            $month = $this->edad[1];
+            $day = $this->edad[0];
+            $edad = $actualDate['year'] - $year;
+            if ($month > $actualDate['mon'] || ($month = $actualDate['mon'] && $day > $actualDate['mday'])) {
+                $edad = $edad - 1;
+            }
+
+            $this->edad = $edad;
+            return $edad;
         }
     }
 
