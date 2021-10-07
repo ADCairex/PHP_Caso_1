@@ -4,7 +4,7 @@
         <meta charset="UTF-8">
         <title>Preguntas Frecuentes</title>
         <?php
-        include 'styles.php';
+        include '../css/styles.php';
         ?>
     </head>
     <body>

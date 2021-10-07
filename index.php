@@ -4,15 +4,15 @@
         <meta charset="UTF-8">
         <title>Inicio PHP Caso 1</title>
         <?php
-            include 'styles.php';
+            include 'css/styles.php';
         ?>
     </head>
     <body>
         <?php
-            include 'header.php';
-            include 'personajes.php';
-            include 'equipamiento.php';
-            include 'footer.php';
+            include 'templates/header.php';
+            include 'templates/personajes.php';
+            include 'templates/equipamiento.php';
+            include 'templates/footer.php';
             include 'scripts.php';
         ?>
     </body>
