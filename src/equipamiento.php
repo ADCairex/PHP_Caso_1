@@ -14,7 +14,6 @@
                     <i class="fas fa-basketball-ball"></i>
                     </div>
                     <div class="dataTable">
-
                         <!-- Aquí hay que hacer un bucle para crear las características -->
                         <div class="rowPersonajes">
                             <div class="caracteristica">
