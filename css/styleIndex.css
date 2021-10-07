@@ -5,8 +5,10 @@ body, html {
     display: flex;
     flex-direction: column;
     justify-content: space-between;
+    
 
 }
+
 
 header{
     width: 100%;
@@ -177,6 +179,10 @@ p{
     display: flex;
     flex-wrap: wrap;
     padding-top: 2rem;
+    background-image: url(../imagenes/cover.jpg);
+    background-size: cover;
+    background-repeat: no-repeat;
+    background-position: center;
 }
 .containerPersonajes{
     display: flex;
@@ -184,6 +190,7 @@ p{
     width: 33.33%;
 }
 .containerPersonajesBox{
+    background-color: rgb(247, 243, 243);
     width: 90%;
     height: auto;
     margin: 2rem auto;
