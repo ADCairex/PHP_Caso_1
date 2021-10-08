@@ -257,6 +257,7 @@ border: 1px solid #fff;
     background-size: cover;
     background-repeat: round;
     padding: 5rem;
+    overflow-wrap: anywhere;
 }
 
 .contenidoPreguntas{
