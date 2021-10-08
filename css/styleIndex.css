@@ -258,6 +258,7 @@ border: 1px solid #fff;
     background-repeat: round;
     padding: 5rem;
     overflow-wrap: anywhere;
+    margin: auto;
 }
 
 .contenidoPreguntas{
