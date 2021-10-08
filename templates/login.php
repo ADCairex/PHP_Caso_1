@@ -32,7 +32,7 @@ function validar_dni($dni){
             <?php
                 if (isset($_POST['user']) ) {
                     if ($_POST['user'] != "") {
-                        header("Location: index.php");
+                        header("Location: ../index.php");
                     } else {
                         echo '<br><p style="color: red;">Debes rellenar el campo.</p>';                        
                     }
@@ -43,8 +43,8 @@ function validar_dni($dni){
         </form>
             </div>
         <?php
-include 'footer.php';
-?>
+            include 'footer.php';
+        ?>
     </body>
 </html>
 
