@@ -106,10 +106,10 @@
                                             </div>
                                           <div class="rowPersonajes">
                                             <div class="caracteristica">
-                                                <p>Tribu</p>
+                                                <p>Raza</p>
                                             </div>
                                             <div class="valor">
-                                                <p>' . $arrayObjetosPersonajes[$i]->tribu . '</p>
+                                                <p>' . $arrayObjetosPersonajes[$i]->raza . '</p>
                                             </div>
                                           </div>
                                     ';

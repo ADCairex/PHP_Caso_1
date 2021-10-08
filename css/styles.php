@@ -1,6 +1,7 @@
 <!-- NUESTRO ESTILO, con mucho FLOW -->
 
 <link rel="stylesheet" href="css/styleIndex.css">
+<link rel="stylesheet" href="../css/styleIndex.css">
 
 <!-- ESTILO DE BOOTSTRAP COMENTADO POR INTERFERENCIAS -->
 
@@ -9,6 +10,7 @@
 <!-- FONTAWESOME -->
 
 <link rel="stylesheet" href="/css/cssFont/font-awesome.min.css">
+<link rel="stylesheet" href="../css/cssFont/font-awesome.min.css">
 
 <!-- Cargamos aquí el script para que funcione FontAwesome -->
 

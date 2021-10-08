@@ -67,7 +67,7 @@
         "descripcion": "Personaje Orco de nivel 13",  
         "tipo": "Orco",
         "colmillos": "Largos",
-        "tribu": "Uruk-hai"
+        "raza": "Uruk-hai"
     },    
     {  
         "id": 5,  
@@ -95,7 +95,7 @@
         "descripcion": "Personaje Orco de nivel 1",  
         "tipo": "Orco",
         "colmillos": "Grandes",
-        "tribu": "Semi-Orco"
+        "raza": "Semi-Orco"
     },    
     {  
         "id": 7,  
