@@ -8,9 +8,9 @@
     foreach ($equipamientoJson as $i) {
         $idPj = $i['id'];
         $nombrePj = $i['nombre'];
-        $dniPj = $i['dni'];
-        $fechaNacimiento = $i['fecha_de_nacimiento'];
-        $alturaPj = $i['altura'];
+        $antiguedad = $i['antiguedad'];
+        $dimensionLargoPj = $i['dimensionLargo'];
+        $dimensionAnchoPj = $i['dimensionAncho'];
         $pesoPj = $i['peso'];
         $imagenPj = $i['imagen'];
         $iconoPj = $i['icono'];
@@ -18,68 +18,64 @@
         $tipoPj = $i['tipo'];
 
         if ($tipoPj == 'Espada') {
-            $razaPj = $i['raza'];
-            $familiaPj = $i['familia'];
+            $materialHojaPj = $i['materialHoja'];
+            $materialMangoPj = $i['materialMango'];
             array_push($arrayObjetosEquipamiento, new Espada(
                 $idPj,
                 $nombrePj,
-                $dniPj,
-                $fechaNacimiento,
+                $antiguedad,
                 $alturaPj,
                 $pesoPj,
                 $imagenPj,
                 $iconoPj,
                 $descripcionPj,
-                $razaPj,
-                $familiaPj
+                $materialHojaPj,
+                $materialMangoPj
             ));
         } elseif ($tipoPj == 'Arco') {
-            $orejasPj = $i['orejas'];
-            $clanPj = $i['clan'];
+            $materialCuerpoPj = $i['materialCuerpo'];
+            $materialCuerdaPj = $i['materialCuerda'];
             array_push($arrayObjetosEquipamiento, new Arco(
                 $idPj,
                 $nombrePj,
-                $dniPj,
-                $fechaNacimiento,
+                $antiguedad,
                 $alturaPj,
                 $pesoPj,
                 $imagenPj,
                 $iconoPj,
                 $descripcionPj,
-                $orejasPj,
-                $clanPj
+                $materialCuerpoPj,
+                $materialCuerdaPj
             ));
         } elseif ($tipoPj == 'Casco') {
-            $colmillosPj = $i['colmillos'];
-            $razaPj = $i['raza'];
+            $materialPj = $i['material'];
+            $resistenciaPj = $i['resistencia'];
             array_push($arrayObjetosEquipamiento, new Casco(
                 $idPj,
                 $nombrePj,
-                $dniPj,
-                $fechaNacimiento,
+                $antiguedad,
                 $alturaPj,
                 $pesoPj,
                 $imagenPj,
                 $iconoPj,
                 $descripcionPj,
-                $colmillosPj,
-                $razaPj
+                $materialPj,
+                $resistenciaPj
             ));
         } elseif ($tipoPj == 'Hacha') {
-            $barbaPj = $i['barba'];
-            $herreroPj = $i['herrero'];
+            $materialHojaHPj = $i['materialHojaH'];
+            $materialMangoHPj = $i['materialMangoH'];
             array_push($arrayObjetosEquipamiento, new Hacha(
                 $idPj,
                 $nombrePj,
-                $dniPj,
-                $fechaNacimiento,
+                $antiguedad,
                 $alturaPj,
                 $pesoPj,
                 $imagenPj,
                 $iconoPj,
                 $descripcionPj,
-                $barbaPj,
-                $herreroPj
+                $materialHojaHPj,
+                $materialMangoH
             ));
         }
     }

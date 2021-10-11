@@ -1,13 +1,13 @@
 <?php
-    function validar_dni($dni){
-        $letra = substr($dni, -1);
-        $numeros = substr($dni, 0, -1);
-        if ( substr("TRWAGMYFPDXBNJZSQVHLCKE", $numeros%23, 1) == $letra && strlen($letra) == 1 && strlen ($numeros) == 8 ){ // dni argentina  8 caracteres
-            echo 'valido';
-        }else{
-            echo 'no valido';
-        }
-    }
+    // function validar_dni($dni){
+    //     $letra = substr($dni, -1);
+    //     $numeros = substr($dni, 0, -1);
+    //     if ( substr("TRWAGMYFPDXBNJZSQVHLCKE", $numeros%23, 1) == $letra && strlen($letra) == 1 && strlen ($numeros) == 8 ){ // dni argentina  8 caracteres
+    //         echo 'valido';
+    //     }else{
+    //         echo 'no valido';
+    //     }
+    // }
     
     class Equipamiento {
 
@@ -34,19 +34,33 @@
             $this->descripcion = $descripcion;
         }
 
-        function setId($id) {
-            $this->id = $id;
+        function calcularAntiguedad() {
+            $actualDate = getdate();
+            $this->antiguedad = explode('/', $this->antiguedad);
+            $year = $this->antiguedad[2];
+            $month = $this->antiguedad[1];
+            $day = $this->antiguedad[0];
+            $edad = $actualDate['year'] - $year;
+            if ($month > $actualDate['mon'] || ($month = $actualDate['mon'] && $day > $actualDate['mday'])) {
+                $antiguedad = $antiguedad - 1;
+            }
+
+            $this->antiguedad = $antiguedad;
+            return $antiguedad;
         }
-        function setName($nombre) {
-            $this->nombre = $nombre;
-        }
+        // function setId($id) {
+        //     $this->id = $id;
+        // }
+        // function setName($nombre) {
+        //     $this->nombre = $nombre;
+        // }
     
-        function getId() {
-            return $this->id;
-        }
-        function getName() {
-            return $this->nombre;
-        }
+        // function getId() {
+        //     return $this->id;
+        // }
+        // function getName() {
+        //     return $this->nombre;
+        // }
     
     }
 
