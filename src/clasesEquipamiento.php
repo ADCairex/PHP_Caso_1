@@ -40,7 +40,7 @@
             $year = $this->antiguedad[2];
             $month = $this->antiguedad[1];
             $day = $this->antiguedad[0];
-            $edad = $actualDate['year'] - $year;
+            $antiguedad = $actualDate['year'] - $year;
             if ($month > $actualDate['mon'] || ($month = $actualDate['mon'] && $day > $actualDate['mday'])) {
                 $antiguedad = $antiguedad - 1;
             }
@@ -48,19 +48,6 @@
             $this->antiguedad = $antiguedad;
             return $antiguedad;
         }
-        // function setId($id) {
-        //     $this->id = $id;
-        // }
-        // function setName($nombre) {
-        //     $this->nombre = $nombre;
-        // }
-    
-        // function getId() {
-        //     return $this->id;
-        // }
-        // function getName() {
-        //     return $this->nombre;
-        // }
     
     }
 

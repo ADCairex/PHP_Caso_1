@@ -24,7 +24,8 @@
                 $idPj,
                 $nombrePj,
                 $antiguedad,
-                $alturaPj,
+                $dimensionLargoPj,
+                $dimensionAnchoPj,
                 $pesoPj,
                 $imagenPj,
                 $iconoPj,
@@ -39,7 +40,8 @@
                 $idPj,
                 $nombrePj,
                 $antiguedad,
-                $alturaPj,
+                $dimensionLargoPj,
+                $dimensionAnchoPj,
                 $pesoPj,
                 $imagenPj,
                 $iconoPj,
@@ -54,7 +56,8 @@
                 $idPj,
                 $nombrePj,
                 $antiguedad,
-                $alturaPj,
+                $dimensionLargoPj,
+                $dimensionAnchoPj,
                 $pesoPj,
                 $imagenPj,
                 $iconoPj,
@@ -69,13 +72,14 @@
                 $idPj,
                 $nombrePj,
                 $antiguedad,
-                $alturaPj,
+                $dimensionLargoPj,
+                $dimensionAnchoPj,
                 $pesoPj,
                 $imagenPj,
                 $iconoPj,
                 $descripcionPj,
                 $materialHojaHPj,
-                $materialMangoH
+                $materialMangoHPj
             ));
         }
     }

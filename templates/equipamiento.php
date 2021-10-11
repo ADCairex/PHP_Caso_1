@@ -2,8 +2,8 @@
 <div class="sectionPersonajes">
     <!-- Aquí hay que hacer un bucle para crear los personajes -->
     <?php
-        include 'src/cargarPersonajes.php';
 
+        include 'src/cargarEquipamiento.php';
         for ($i = 0; $i < count($arrayObjetosEquipamiento); $i++) {
             echo '<div class="containerPersonajes">
                     <div class="containerPersonajesBox">
@@ -13,7 +13,7 @@
                         </div>
                         <div class="data">
                             <div class="dataName">
-                                <h2>' . $arrayObjetosEquipamiento[$i]->nombre . ' , ' . $arrayObjetosEquipamiento[$i]->calcularEdad() . ' años</h2>
+                                <h2>' . $arrayObjetosEquipamiento[$i]->nombre . ' , ' . $arrayObjetosEquipamiento[$i]->calcularAntiguedad() . ' años</h2>
                                 <i class="' . $arrayObjetosEquipamiento[$i]->icono . '"></i>
                             </div>
                             <div class="dataTable">
