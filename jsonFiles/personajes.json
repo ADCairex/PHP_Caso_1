@@ -2,7 +2,7 @@
     {  
         "id": 0,  
         "nombre": "Miguel", 
-        "dni": "487569424H", 
+        "dni": "asdfasdf", 
         "fecha_de_nacimiento": "01/01/1993",  
         "altura": 1.67,  
         "peso": 65.1,  
@@ -16,7 +16,7 @@
     {  
         "id": 1,  
         "nombre": "Alberto",  
-        "dni": "487569424H", 
+        "dni": "3333H3", 
         "fecha_de_nacimiento": "01/01/1905",  
         "altura": 1.67,  
         "peso": 65.1,  
