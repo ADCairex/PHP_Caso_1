@@ -35,12 +35,21 @@
                                 </div>
                                 <div class="rowPersonajes">
                                     <div class="caracteristica">
+                                        <p>DNI</p>
+                                    </div>
+                                    <div class="valor">
+                                        <p>' . $arrayObjetosPersonajes[$i]->dni . '<br>' . $arrayObjetosPersonajes[$i]->validarDNI() . '</p>
+                                    </div>
+                                </div>
+                                <div class="rowPersonajes">
+                                    <div class="caracteristica">
                                         <p>Tipo</p>
                                     </div>
                                     <div class="valor">
                                         <p>' . get_class($arrayObjetosPersonajes[$i]) . '</p>
                                     </div>
-                                </div>';
+                                </div>
+                                ';
                                 if (get_class($arrayObjetosPersonajes[$i])  == 'Hombre') {
                                     echo '<div class="rowPersonajes">
                                             <div class="caracteristica">

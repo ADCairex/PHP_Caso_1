@@ -37,6 +37,16 @@
             $this->edad = $edad;
             return $edad;
         }
+
+        function validarDNI() {
+            $formato = preg_match('/[0-9]{7,8}[A-Z]/', $this->dni);
+
+            if ($formato == 1) {
+                return 'DNI valido';
+            } else {
+                return 'DNI no valido';
+            }
+        }
     }
 
     class Orco extends Personaje {
